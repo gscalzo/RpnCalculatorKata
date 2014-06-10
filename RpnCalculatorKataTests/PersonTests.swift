@@ -9,7 +9,7 @@
 import Quick
 
 class Person {
-
+    
     
 }
 
@@ -18,12 +18,6 @@ class PersonSpec: QuickSpec {
         describe("Person") {
             var person: Person?
             beforeEach { person = Person() }
-            
-            it("is happy but never satisfied") {
-                expect(person!.isHappy).to.beTrue()
-                expect{person!.isSatisfied}.willNot.beTrue()
-            }
-            
             describe("greeting") {
                 context("when the person is unhappy") {
                     beforeEach { person!.isHappy = false }
@@ -32,7 +26,6 @@ class PersonSpec: QuickSpec {
                         expect(person!.greeting).notTo.equal("Hello!")
                     }
                 }
-                
                 context("when the person is happy") {
                     beforeEach { person!.isHappy = true }
                     it("is enthusiastic") {
