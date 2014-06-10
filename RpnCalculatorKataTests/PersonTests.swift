@@ -9,9 +9,8 @@
 import Quick
 
 class Person {
-    var isHappy =  true
-    var isSatisfied =  true
-    var greeting =  "Oh, hi."
+
+    
 }
 
 class PersonSpec: QuickSpec {
